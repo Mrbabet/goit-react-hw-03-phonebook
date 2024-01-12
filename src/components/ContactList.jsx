@@ -12,7 +12,6 @@ const ContactList = ({ contacts, setContacts }) => {
       {contacts.map((contact) => {
         return (
           <li key={contact.id}>
-          
             {contact.name}: {contact.number}
             <button onClick={() => handleDelete(contact.id)}>Delete</button>
           </li>
