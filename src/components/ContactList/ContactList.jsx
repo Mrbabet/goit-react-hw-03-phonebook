@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 const ContactList = ({ contacts, setContacts }) => {
   const handleDelete = (id) => {
     setContacts((prevContacts) =>
@@ -22,3 +22,7 @@ const ContactList = ({ contacts, setContacts }) => {
 };
 
 export default ContactList;
+ContactList.propTypes = {
+  contacts: PropTypes.array,
+  setContacts: PropTypes.func,
+};

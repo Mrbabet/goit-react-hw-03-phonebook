@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Section from "./Section";
-import ContactForm from "./ContactForm";
-import Contacts from "./ContactList";
-import Filter from "./Filter";
+import Section from "../Section/Section";
+import ContactForm from "../ContactForm/ContactForm";
+import Contacts from "../ContactList/ContactList";
+import Filter from "../Filter/Filter";
 
 const Phonebook = () => {
   const [contacts, setContacts] = useState(() => {
